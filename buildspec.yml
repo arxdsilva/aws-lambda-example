@@ -7,20 +7,18 @@ env:
     # The AWS CodeBuild IAM role must allow write access to it.
     S3_BUCKET: "some-bucket"
     PACKAGE: "github.com/aws-samples/lambda-go-samples"
+    SENDGRID_API_KEY: "YOUR_KEY"
 
 phases:
 
   install:
     commands:
-
       # AWS Codebuild Go images use /go for the $GOPATH so let's copy our 
       # application source code into that directory structure.
       - mkdir -p "/go/src/$(dirname ${PACKAGE})"
       - ln -s "${CODEBUILD_SRC_DIR}" "/go/src/${PACKAGE}" 
-      
       # Print all environment variables (handy for AWS CodeBuild logs)
       - env
-
       # Install golint
       - go get -u github.com/golang/lint/golint
 
