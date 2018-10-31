@@ -1,0 +1,49 @@
+{
+	"comment": "",
+	"ignore": "test",
+	"package": [
+		{
+			"checksumSHA1": "kyLD6n5dks+DTklcQTl2ez3c+DY=",
+			"path": "github.com/aws/aws-lambda-go/events",
+			"revision": "81bf74e9c63687c20e04dd0c820da6ba6ed97869",
+			"revisionTime": "2018-10-31T15:46:44Z"
+		},
+		{
+			"checksumSHA1": "RelVtlYNz5POqozatSX/Gg/O3+4=",
+			"path": "github.com/aws/aws-lambda-go/lambda",
+			"revision": "81bf74e9c63687c20e04dd0c820da6ba6ed97869",
+			"revisionTime": "2018-10-31T15:46:44Z"
+		},
+		{
+			"checksumSHA1": "d4ehJWLS4YsqFG825pgwdvKDB6A=",
+			"path": "github.com/aws/aws-lambda-go/lambda/messages",
+			"revision": "81bf74e9c63687c20e04dd0c820da6ba6ed97869",
+			"revisionTime": "2018-10-31T15:46:44Z"
+		},
+		{
+			"checksumSHA1": "f9MhOwQHveaPVWO6trwfqHa+W0M=",
+			"path": "github.com/aws/aws-lambda-go/lambdacontext",
+			"revision": "81bf74e9c63687c20e04dd0c820da6ba6ed97869",
+			"revisionTime": "2018-10-31T15:46:44Z"
+		},
+		{
+			"checksumSHA1": "RU9EFdqqxt1/x+PgsFVURN1J15U=",
+			"path": "github.com/sendgrid/rest",
+			"revision": "4006428f7f772a8c687f57e34ad11862408c6c65",
+			"revisionTime": "2018-10-05T14:34:42Z"
+		},
+		{
+			"checksumSHA1": "Vghe1cCBepUwIL/5yu2nVOvlees=",
+			"path": "github.com/sendgrid/sendgrid-go",
+			"revision": "6d76920bcbf1408fffd9cf26030c42019abf0394",
+			"revisionTime": "2018-10-23T17:01:33Z"
+		},
+		{
+			"checksumSHA1": "pUgMWMSL+6d4+jjhd0cIjVXJdIw=",
+			"path": "github.com/sendgrid/sendgrid-go/helpers/mail",
+			"revision": "6d76920bcbf1408fffd9cf26030c42019abf0394",
+			"revisionTime": "2018-10-23T17:01:33Z"
+		}
+	],
+	"rootPath": "github.com/arxdsilva/aws-lambda-example"
+}
