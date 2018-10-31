@@ -1,2 +1,5 @@
 golang:
   golang_version: 1.10.1
+
+tests:
+  - go test -v .
