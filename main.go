@@ -6,8 +6,8 @@ import (
 	"net/http"
 	"os"
 
+	"github.com/aws/aws-lambda-go/events"
 	"github.com/aws/aws-lambda-go/lambda"
-	"github.com/aws/aws-lambda-go/lambda/events"
 	sendgrid "github.com/sendgrid/sendgrid-go"
 	"github.com/sendgrid/sendgrid-go/helpers/mail"
 )
@@ -51,7 +51,11 @@ func SendMail(userName, userEmail, subject, msg string) (err error) {
 	}
 	if response.StatusCode != http.StatusOK {
 		return errors.New(
-			fmt.Sprintf("Email send failure, status code: %v | body: %s", response.StatusCode, response.Body)
+			fmt.Sprintf(
+				"Email send failure, status code: %v | body: %s",
+				response.StatusCode,
+				response.Body,
+			),
 		)
 	}
 	return
